@@ -6,16 +6,21 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-int main() {
-    printf("Desafio Super Trunfo - Paises \n");
-    char estado1;
-    char codcar1[20];
-    char nomecid1[40];
-    int populacao1;
-    float area1;
-    float pib1;
-    int ponto1;
 
+int main() {
+    // Variáveis definidas - Super Trunfo - Países 
+    char estado1, estado2;
+    char codcar1[20], codcar2[20];
+    char nomecid1[40], nomecid2[40]; 
+    int populacao1, populacao2;
+    float area1, area2;
+    float pib1, pib2;
+    int ponto1, ponto2;
+
+    // Título para exibição
+    printf("Desafio Super Trunfo - Paises \n");
+
+    // Entrada de dados - Carta1
     printf("Digite abaixo as informações para Carta1\n");
 
     printf("Uma letra de 'A' a 'H' (representando um Estado): \n");
@@ -24,11 +29,11 @@ int main() {
     printf("A letra que representa o Estado seguida de um número entre 01 a 04 (ex: C02, F04): \n");
     scanf("%s", codcar1);
 
-    printf("Nome da cidade: \n");
+    printf("O nome da cidade: \n");
     scanf("%s", nomecid1);
 
     printf("A população ref. a cidade: \n");
-    scanf("%d", &populacao1);
+    scanf("%i", &populacao1);
 
     printf("A área ref. a cidade: \n");
     scanf("%f", &area1);
@@ -36,18 +41,56 @@ int main() {
     printf("O PIB ref. a cidade: \n");
     scanf("%f", &pib1);
 
-    printf("Número de pontos turísticos: \n");
+    printf("Número de pontos turísticos ref. a cidade: \n");
     scanf("%d", &ponto1);
-    
+ 
+    // Saida de dados - Carta1
     printf("Carta1: \n");
     printf("Estado: %c \n", estado1);
-    printf("Código: %s \n", codcar1);
+    printf("Código da Carta: %s \n", codcar1);
     printf("Nome da Cidade: %s \n", nomecid1);
-    printf("População: %f \n", populacao1);
-    printf("Área: %f km² \n", area1);
-    printf("PIB: %f bilhões de reais \n", pib1);
+    printf("População: %i \n", populacao1);
+    printf("Área: %.2f km² \n", area1);
+    printf("PIB: %.2f bilhões de reais \n", pib1);
     printf("Número de Pontos Turísticos: %d \n", ponto1);
     
+    // Entrada de dados - Carta2
+    printf("Digite abaixo as informações para Carta2 \n");
+
+    printf("Uma letra de 'A' a 'H' (representando um Estado): \n");
+    scanf("%c", &estado2);
+
+    printf("A letra que representa o Estado seguida de um número entre 01 a 04 (ex: C02, F04): \n");
+    scanf("%s", codcar2);
+
+    printf("O nome da cidade: \n");
+    scanf("%s", nomecid2);
+
+    printf("A população ref. a cidade: \n");
+    scanf("%i", &populacao2);
+
+    printf("A área ref. a cidade: \n");
+    scanf("%f", &area2);
+
+    printf("O PIB ref. a cidade: \n");
+    scanf("%f", &pib2);
+
+    printf("O número de Pontos Turísticos ref. a cidade: \n");
+    scanf("%d", &ponto2);
+
+    //Saida de dados - Carta2
+    printf("Carta2 \n");
+    printf("Estado: %c \n", estado2);
+    printf("Código da Carta: %s \n", codcar2);
+    printf("Nome da Cidade: %s \n", nomecid2);
+    printf("População: %i, \n", populacao2);
+    printf("Área (em Km²): %.2f \n", area2);
+    printf("PIB: %.2f \n", pib2);
+    printf("Número de Pontos Turísticos: %d \n", ponto2);
+
+    
+
+
         
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.

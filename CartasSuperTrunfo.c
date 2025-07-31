@@ -6,7 +6,7 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-
+ 
 int main() {
     // Variáveis definidas - Super Trunfo - Países 
     char estado1, estado2;
@@ -17,14 +17,14 @@ int main() {
     float pib1, pib2;
     int ponto1, ponto2;
 
-    // Título para exibição
-    printf("Desafio Super Trunfo - Paises \n");
+    // Título para exibição do projeto
+    printf("Desafio Super Trunfo - Paises \n\n");
 
     // Entrada de dados - Carta1
     printf("Digite abaixo as informações para Carta1\n");
 
     printf("Uma letra de 'A' a 'H' (representando um Estado): \n");
-    scanf("%c", &estado1);
+    scanf(" %c", &estado1);
 
     printf("A letra que representa o Estado seguida de um número entre 01 a 04 (ex: C02, F04): \n");
     scanf("%s", codcar1);
@@ -42,23 +42,23 @@ int main() {
     scanf("%f", &pib1);
 
     printf("Número de pontos turísticos ref. a cidade: \n");
-    scanf("%d", &ponto1);
+    scanf("%i", &ponto1);
  
     // Saida de dados - Carta1
     printf("Carta1: \n");
     printf("Estado: %c \n", estado1);
-    printf("Código da Carta: %s \n", codcar1);
+    printf("Código: %s \n", codcar1);
     printf("Nome da Cidade: %s \n", nomecid1);
     printf("População: %i \n", populacao1);
     printf("Área: %.2f km² \n", area1);
     printf("PIB: %.2f bilhões de reais \n", pib1);
-    printf("Número de Pontos Turísticos: %d \n", ponto1);
+    printf("Número de Pontos Turísticos: %i \n\n", ponto1);
     
     // Entrada de dados - Carta2
     printf("Digite abaixo as informações para Carta2 \n");
-
+    
     printf("Uma letra de 'A' a 'H' (representando um Estado): \n");
-    scanf("%c", &estado2);
+    scanf(" %c", &estado2); 
 
     printf("A letra que representa o Estado seguida de um número entre 01 a 04 (ex: C02, F04): \n");
     scanf("%s", codcar2);
@@ -76,17 +76,17 @@ int main() {
     scanf("%f", &pib2);
 
     printf("O número de Pontos Turísticos ref. a cidade: \n");
-    scanf("%d", &ponto2);
+    scanf("%i", &ponto2);
 
     //Saida de dados - Carta2
     printf("Carta2 \n");
     printf("Estado: %c \n", estado2);
-    printf("Código da Carta: %s \n", codcar2);
+    printf("Código: %s \n", codcar2);
     printf("Nome da Cidade: %s \n", nomecid2);
-    printf("População: %i, \n", populacao2);
+    printf("População: %i \n", populacao2);
     printf("Área (em Km²): %.2f \n", area2);
-    printf("PIB: %.2f \n", pib2);
-    printf("Número de Pontos Turísticos: %d \n", ponto2);
+    printf("PIB: %.2f bilhões de reais \n", pib2);
+    printf("Número de Pontos Turísticos: %i \n", ponto2);
 
     
 

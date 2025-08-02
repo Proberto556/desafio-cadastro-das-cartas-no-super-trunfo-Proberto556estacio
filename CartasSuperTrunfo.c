@@ -112,6 +112,7 @@
     printf("PIB: %.2f bilhões de reais \n", pib2);
     printf("Número de Pontos Turísticos: %i \n", ponto2);
     
+    //Nivel Novato finalizado até saida de Dados - Carta 2
       
     
     return 0;

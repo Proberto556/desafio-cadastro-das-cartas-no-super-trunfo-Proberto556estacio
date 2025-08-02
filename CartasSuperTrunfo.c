@@ -22,7 +22,7 @@
 
     int main() {
     // Variáveis definidas - Super Trunfo - Países 
-    char estado1[3], estado2[3];
+    char estado1, estado2;
     char codcar1[4], codcar2[4];
     char nomecid1[40], nomecid2[40]; 
     int populacao1, populacao2;
@@ -48,7 +48,7 @@
     printf("Digite abaixo as informações para Carta1\n");
 
     printf("Uma letra de 'A' a 'H' representando um Estado: \n");
-    scanf(" %s", estado1);
+    scanf(" %c", &estado1);
 
     printf("A letra que representa o Estado seguida de um número entre 01 a 04 (ex: C02, F04): \n");
     scanf("%3s", codcar1);
@@ -70,7 +70,7 @@
  
     // Saida de dados - Carta1
     printf("Carta1: \n");
-    printf("Estado: %s \n", estado1);
+    printf("Estado: %c \n", estado1);
     printf("Código: %3s \n", codcar1);
     printf("Nome da Cidade: %s \n", nomecid1);
     printf("População: %i \n", populacao1);
@@ -81,8 +81,8 @@
     // Entrada de dados - Carta2
     printf("Digite abaixo as informações para Carta2 \n");
     
-    printf("Uma letra de 'A' a 'H' representando um Estado: \n"); 
-    scanf(" %s", estado2); 
+    printf("Uma letra de 'A' a 'H' (representando um Estado): \n"); 
+    scanf(" %c", &estado2); 
 
     printf("A letra que representa o Estado seguida de um número entre 01 a 04 (ex: C02, F04): \n");
     scanf("%s", codcar2);
@@ -104,7 +104,7 @@
 
     //Saida de dados - Carta2
     printf("Carta2 \n");
-    printf("Estado: %s \n", estado2);
+    printf("Estado: %c \n", estado2);
     printf("Código: %s \n", codcar2);
     printf("Nome da Cidade: %s \n", nomecid2);
     printf("População: %i \n", populacao2);

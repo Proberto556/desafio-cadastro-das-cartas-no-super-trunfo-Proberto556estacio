@@ -105,7 +105,7 @@
     //Saida de dados - Carta2
     printf("Carta2 \n");
     printf("Estado: %c \n", estado2);
-    printf("Código: %s \n", codcar2);
+    printf("Código: %3s \n", codcar2);
     printf("Nome da Cidade: %s \n", nomecid2);
     printf("População: %i \n", populacao2);
     printf("Área (em Km²): %.2f \n", area2);

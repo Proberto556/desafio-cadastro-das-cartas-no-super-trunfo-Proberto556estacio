@@ -85,7 +85,7 @@
     scanf(" %c", &estado2); 
 
     printf("A letra que representa o Estado seguida de um número entre 01 a 04 (ex: C02, F04): \n");
-    scanf("%s", codcar2);
+    scanf("%3s", codcar2);
 
     printf("O nome da cidade: \n");
     scanf(" %s", nomecid2);

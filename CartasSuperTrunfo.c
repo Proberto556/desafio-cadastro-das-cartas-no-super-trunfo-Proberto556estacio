@@ -29,7 +29,7 @@
     float area1, area2;
     float pib1, pib2;
     int ponto1, ponto2;
-
+        
     // Título para exibição do projeto
     printf("Desafio Super Trunfo - Paises \n\n");
 
@@ -68,6 +68,12 @@
     printf("Número de pontos turísticos ref. a cidade: \n");
     scanf("%i", &ponto1);
  
+    //Cálculo da Densidade populacional carta1
+    float densipop1 = (populacao1 / area1);
+
+    //Cálculo Pib per Capita carta1
+    float pibper1 = (pib1 / populacao1);
+    
     // Saida de dados - Carta1
     printf("Carta1: \n");
     printf("Estado: %c \n", estado1);
@@ -76,9 +82,11 @@
     printf("População: %i \n", populacao1);
     printf("Área: %.2f km² \n", area1);
     printf("PIB: %.2f bilhões de reais \n", pib1);
-    printf("Número de Pontos Turísticos: %i \n\n", ponto1);
-    
-    // Entrada de dados - Carta2
+    printf("Número de Pontos Turísticos: %i \n", ponto1);
+    printf("Densidade populacional: %.2f hab/km² \n", densipop1);
+    printf("PIB per Capita: %2f reais \n\n", pibper1);
+      
+    //Entrada de dados - Carta2
     printf("Digite abaixo as informações para Carta2 \n");
     
     printf("Uma letra de 'A' a 'H' (representando um Estado): \n"); 

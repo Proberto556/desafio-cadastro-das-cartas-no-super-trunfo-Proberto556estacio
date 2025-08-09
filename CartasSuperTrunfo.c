@@ -110,6 +110,12 @@
     printf("O número de Pontos Turísticos ref. a cidade: \n");
     scanf("%i", &ponto2);
 
+    //Cálculo da Densidade populacional carta2 (Utilizando conversão explicita)
+    float densipop2 = (float) populacao2 / area2;
+
+    //Cálculo Pib per Capita carta2 (Utilizando conversão explicita)
+    float pibper2 = pib2 / (float) populacao2;
+
     //Saida de dados - Carta2
     printf("Carta2 \n");
     printf("Estado: %c \n", estado2);
@@ -119,8 +125,9 @@
     printf("Área (em Km²): %.2f \n", area2);
     printf("PIB: %.2f bilhões de reais \n", pib2);
     printf("Número de Pontos Turísticos: %i \n", ponto2);
-    
-    //Nivel Novato finalizado até saida de Dados - Carta 2
+    printf("Densidade Populacional: %.2f hab/km² \n", densipop2);
+    printf("PIB per Capita: %f reais\n", pibper2);
+      
       
     
     return 0;

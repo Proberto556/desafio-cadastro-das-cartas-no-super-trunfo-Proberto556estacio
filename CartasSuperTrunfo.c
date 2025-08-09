@@ -28,8 +28,8 @@
     int populacao1, populacao2;
     float area1, area2;
     float pib1, pib2;
-    int ponto1, ponto2;
-        
+    int ponto1, ponto2; 
+      
     // Título para exibição do projeto
     printf("Desafio Super Trunfo - Paises \n\n");
 
@@ -68,11 +68,11 @@
     printf("Número de pontos turísticos ref. a cidade: \n");
     scanf("%i", &ponto1);
  
-    //Cálculo da Densidade populacional carta1
-    float densipop1 = (populacao1 / area1);
+    //Cálculo da Densidade populacional carta1 (Utilizando conversão explicita)
+    float densipop1 = (float) populacao1 / area1;
 
-    //Cálculo Pib per Capita carta1
-    float pibper1 = (pib1 / populacao1);
+    //Cálculo Pib per Capita carta1 (Utilizando conversão explicita)
+    float pibper1 = pib1 / (float) populacao1;
     
     // Saida de dados - Carta1
     printf("Carta1: \n");
@@ -84,7 +84,7 @@
     printf("PIB: %.2f bilhões de reais \n", pib1);
     printf("Número de Pontos Turísticos: %i \n", ponto1);
     printf("Densidade populacional: %.2f hab/km² \n", densipop1);
-    printf("PIB per Capita: %2f reais \n\n", pibper1);
+    printf("PIB per Capita: %f reais \n\n", pibper1);
       
     //Entrada de dados - Carta2
     printf("Digite abaixo as informações para Carta2 \n");

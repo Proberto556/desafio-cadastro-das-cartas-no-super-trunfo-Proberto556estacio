@@ -54,10 +54,10 @@
     scanf("%3s", codcar1);
 
     printf("O nome da cidade: \n");
-    scanf(" %s", nomecid1); 
+    scanf(" %39[^\n]", nomecid1); 
 
     printf("A população ref. a cidade: \n");
-    scanf("%i", &populacao1);
+    scanf("%d", &populacao1);
 
     printf("A área ref. a cidade: \n");
     scanf("%f", &area1);
@@ -66,25 +66,25 @@
     scanf("%f", &pib1);
 
     printf("Número de pontos turísticos ref. a cidade: \n");
-    scanf("%i", &ponto1);
+    scanf("%d", &ponto1);
  
     //Cálculo da Densidade populacional carta1 (Utilizando conversão explicita)
     float densipop1 = (float) populacao1 / area1;
 
     //Cálculo Pib per Capita carta1 (Utilizando conversão explicita)
-    float pibper1 = pib1 / (float) populacao1;
+    float pibper1 = pib1 * 1000000000.0 / (float) populacao1;
     
     // Saida de dados - Carta1
     printf("Carta1: \n");
     printf("Estado: %c \n", estado1);
     printf("Código: %3s \n", codcar1);
     printf("Nome da Cidade: %s \n", nomecid1);
-    printf("População: %i \n", populacao1);
+    printf("População: %d \n", populacao1);
     printf("Área: %.2f km² \n", area1);
     printf("PIB: %.2f bilhões de reais \n", pib1);
-    printf("Número de Pontos Turísticos: %i \n", ponto1);
+    printf("Número de Pontos Turísticos: %d \n", ponto1);
     printf("Densidade populacional: %.2f hab/km² \n", densipop1);
-    printf("PIB per Capita: %f reais \n\n", pibper1);
+    printf("PIB per Capita: %.2f reais \n\n", pibper1);
       
     //Entrada de dados - Carta2
     printf("Digite abaixo as informações para Carta2 \n");
@@ -96,10 +96,10 @@
     scanf("%3s", codcar2);
 
     printf("O nome da cidade: \n");
-    scanf(" %s", nomecid2);
+    scanf(" %39[^\n]", nomecid2);
 
     printf("A população ref. a cidade: \n");
-    scanf("%i", &populacao2);
+    scanf("%d", &populacao2);
 
     printf("A área ref. a cidade: \n");
     scanf("%f", &area2);
@@ -108,13 +108,13 @@
     scanf("%f", &pib2);
 
     printf("O número de Pontos Turísticos ref. a cidade: \n");
-    scanf("%i", &ponto2);
+    scanf("%d", &ponto2);
 
     //Cálculo da Densidade populacional carta2 (Utilizando conversão explicita)
     float densipop2 = (float) populacao2 / area2;
 
     //Cálculo Pib per Capita carta2 (Utilizando conversão explicita)
-    float pibper2 = pib2 / (float) populacao2;
+    float pibper2 = pib2 * 1000000000.0 / (float) populacao2;
 
     //Saida de dados - Carta2
     printf("Carta2 \n");
@@ -126,7 +126,7 @@
     printf("PIB: %.2f bilhões de reais \n", pib2);
     printf("Número de Pontos Turísticos: %i \n", ponto2);
     printf("Densidade Populacional: %.2f hab/km² \n", densipop2);
-    printf("PIB per Capita: %f reais\n", pibper2);
+    printf("PIB per Capita: %.2f reais\n", pibper2);
       
       
     

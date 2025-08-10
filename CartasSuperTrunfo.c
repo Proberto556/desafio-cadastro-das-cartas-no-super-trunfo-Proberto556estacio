@@ -125,7 +125,7 @@
     //Cálculo da Densidade populacional carta2 (Utilizando conversão explicita e proteção Contra divisão por Zero) 
     float densipop2;
         if (area2 != 0.0f) {
-            densipop2 =(float) populacao1 / area1;
+            densipop2 =(float) populacao2 / area2;
         } else {
             densipop2 = 0.0f; //Define um valor padrão seguro
             printf("Atenção: Área da Carta 2 é zero. Densidade populacional definida como 0.\n");
@@ -134,7 +134,7 @@
     //Cálculo Pib per Capita carta2 (Utilizando conversão explicita e proteção Contra divisão por Zero)
     float pibper2;
         if (populacao2 != 0.0f) {
-        pibper2 = pib2 * 1000000000.0 / (float) populacao1;
+        pibper2 = pib2 * 1000000000.0 / (float) populacao2;
         } else {
             pibper2 = 0.0f; //Define um valor padrão seguro
             printf("Atenção: População da carta 2 é zero. Pib per Capita definido como 0\n");        

@@ -68,11 +68,23 @@
     printf("Número de pontos turísticos ref. a cidade: \n");
     scanf("%d", &ponto1);
  
-    //Cálculo da Densidade populacional carta1 (Utilizando conversão explicita)
-    float densipop1 = (float) populacao1 / area1;
+    //Cálculo da Densidade populacional carta1 (Utilizando conversão explicita e proteção Contra divisão por Zero) 
+    float densipop1;
+        if (area1 != 0.0f) {
+            densipop1 =(float) populacao1 / area1;
+        } else {
+            densipop1 = 0.0f; //Define um valor padrão seguro
+            printf("Atenção: Área da Carta1 é zero. Densidade populacional definida como 0.\n");
+        }
 
-    //Cálculo Pib per Capita carta1 (Utilizando conversão explicita)
-    float pibper1 = pib1 * 1000000000.0 / (float) populacao1;
+    //Cálculo Pib per Capita carta1 (Utilizando conversão explicita e proteção Contra divisão por Zero)
+    float pibper1;
+        if (populacao1 != 0.0f) {
+        pibper1 = pib1 * 1000000000.0 / (float) populacao1;
+        } else {
+            pibper1 = 0.0f; //Define um valor padrão seguro
+            printf("Atenção: População da carta 1 é zero. Pib per Capita definido como 0\n");        
+        } 
     
     // Saida de dados - Carta1
     printf("Carta1: \n");
@@ -110,11 +122,23 @@
     printf("O número de Pontos Turísticos ref. a cidade: \n");
     scanf("%d", &ponto2);
 
-    //Cálculo da Densidade populacional carta2 (Utilizando conversão explicita)
-    float densipop2 = (float) populacao2 / area2;
+    //Cálculo da Densidade populacional carta2 (Utilizando conversão explicita e proteção Contra divisão por Zero) 
+    float densipop2;
+        if (area2 != 0.0f) {
+            densipop2 =(float) populacao1 / area1;
+        } else {
+            densipop2 = 0.0f; //Define um valor padrão seguro
+            printf("Atenção: Área da Carta 2 é zero. Densidade populacional definida como 0.\n");
+        }
 
-    //Cálculo Pib per Capita carta2 (Utilizando conversão explicita)
-    float pibper2 = pib2 * 1000000000.0 / (float) populacao2;
+    //Cálculo Pib per Capita carta2 (Utilizando conversão explicita e proteção Contra divisão por Zero)
+    float pibper2;
+        if (populacao2 != 0.0f) {
+        pibper2 = pib2 * 1000000000.0 / (float) populacao1;
+        } else {
+            pibper2 = 0.0f; //Define um valor padrão seguro
+            printf("Atenção: População da carta 2 é zero. Pib per Capita definido como 0\n");        
+        } 
 
     //Saida de dados - Carta2
     printf("Carta2 \n");

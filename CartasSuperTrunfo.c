@@ -19,7 +19,6 @@
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
 
-
     int main() {
     // Variáveis definidas - Super Trunfo - Nível Novato
     char estado1, estado2;
@@ -33,10 +32,7 @@
     // Variáveis definidas - Super Trunfo - Nível Aventureiro
     float densipop1, densipop2;
     float pibper1, pibper2;
-    
-    //Variáveis definidas - Super Trunfo - Nível Mestre
-    float superpoder1, superpoder2;
-
+        
     //Variável Resultado - comparação dos valores dos produtos das cartas 1 e carta2 - Nível Mestre
     int resultadoPopulacao;
     int resultadoArea;
@@ -73,7 +69,7 @@
     scanf(" %39[^\n]", nomecid1); 
 
     printf("A população ref. a cidade: \n");
-    scanf("%d", &populacao1);
+    scanf("%lu", &populacao1);
 
     printf("A área ref. a cidade: \n");
     scanf("%f", &area1);
@@ -102,13 +98,13 @@
             printf("Atenção: População da carta 1 é zero. Pib per Capita definido como 0\n");        
         } 
     
-    //Cálculo Super poder das Carta1 - Nível Mestre 
-    float superPoder1 = (float) populacao1 + area1 + pib1 + (float) ponto1 + densipop1 + pibper1; 
-    printf("Superpoder Carta1 = %f \n", superPoder1);
+    //Cálculo Superpoder das Carta1 - Nível Mestre 
+    float superpoder1 = (float) populacao1 +  area1 + pib1 + (float) ponto1 + densipop1 + pibper1; 
+    printf("Superpoder Carta1 = %f \n", superpoder1);
 
-    //Cálculo Super poder das Carta2 - Nível Mestre 
-    float superPoder2 = (float) populacao2 + area2 + pib2 + (float) ponto2 + densipop2 + pibper2; 
-    printf("Superpoder Carta2 = %f \n", superPoder2);
+    //Cálculo Superpoder das Carta2 - Nível Mestre 
+    float superpoder2 = (float) populacao2 + area2 + pib2 + (float) ponto2 + densipop2 + pibper2; 
+    printf("Superpoder Carta2 = %f \n", superpoder2);
 
 
     // Saida de dados - Carta1
@@ -116,7 +112,7 @@
     printf("Estado: %c \n", estado1);
     printf("Código: %3s \n", codcar1);
     printf("Nome da Cidade: %s \n", nomecid1);
-    printf("População: %u \n", populacao1);
+    printf("População: %lu \n", populacao1);
     printf("Área: %.2f km² \n", area1);
     printf("PIB: %.2f bilhões de reais \n", pib1);
     printf("Número de Pontos Turísticos: %d \n", ponto1);
@@ -137,7 +133,7 @@
     scanf(" %39[^\n]", nomecid2);
 
     printf("A população ref. a cidade: \n");
-    scanf("%d", &populacao2);
+    scanf("%lu", &populacao2);
 
     printf("A área ref. a cidade: \n");
     scanf("%f", &area2);
@@ -171,7 +167,7 @@
     printf("Estado: %c \n", estado2);
     printf("Código: %3s \n", codcar2);
     printf("Nome da Cidade: %s \n", nomecid2);
-    printf("População: %u \n", populacao2);
+    printf("População: %lu \n", populacao2);
     printf("Área (em Km²): %.2f \n", area2);
     printf("PIB: %.2f bilhões de reais \n", pib2);
     printf("Número de Pontos Turísticos: %d \n", ponto2);

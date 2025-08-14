@@ -102,11 +102,7 @@
     float superpoder1 = (float) populacao1 +  area1 + pib1 + (float) ponto1 + densipop1 + pibper1; 
     printf("Superpoder Carta1 = %f \n", superpoder1);
 
-    //Cálculo Superpoder das Carta2 - Nível Mestre 
-    float superpoder2 = (float) populacao2 + area2 + pib2 + (float) ponto2 + densipop2 + pibper2; 
-    printf("Superpoder Carta2 = %f \n", superpoder2);
-
-
+    
     // Saida de dados - Carta1
     printf("Carta1: \n");
     printf("Estado: %c \n", estado1);
@@ -162,6 +158,10 @@
             printf("Atenção: População da carta 2 é zero. Pib per Capita definido como 0\n");        
         } 
 
+    //Cálculo Superpoder das Carta2 - Nível Mestre 
+    float superpoder2 = (float) populacao2 + area2 + pib2 + (float) ponto2 + densipop2 + pibper2; 
+    printf("Superpoder Carta2 = %f \n", superpoder2);
+
     //Saida de dados - Carta2
     printf("Carta2 \n");
     printf("Estado: %c \n", estado2);
@@ -174,7 +174,6 @@
     printf("Densidade Populacional: %.2f hab/km² \n", densipop2);
     printf("PIB per Capita: %.2f reais\n\n", pibper2);
       
-
     
     //Cálculo comparação das Cartas 1 e 2 - Nível Mestre
     resultadoPopulacao = populacao1 > populacao2;

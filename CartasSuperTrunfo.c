@@ -6,7 +6,6 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
-
 // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
@@ -208,8 +207,8 @@
     resultadoPibpercapita = pibper1 > pibper2;
     resultadoSuperpoder = superpoder1 > superpoder2;
     
-    //Exibir valores comparação das cartas 1 e 2 -Nível Mestre
-    printf("Comparação de Cartas com valor dos atributos:\n");
+    //Exibir valores atributos - comparação das cartas 1 e 2 - Nível Mestre
+    printf("Comparação de Cartas - Valor dos atributos:\n");
     printf("População           : Carta1 é %lu          - Carta2 é %lu          - Resultado vencedor %d \n", populacao1, populacao2, resultadoPopulacao);
     printf("Área1               : Carta1 é %.2f         - Carta2 é %.2f         - Resultado vencedor %d\n", area1, area2, resultadoArea);
     printf("Pib1                : Carta1 é %.2f         - Carta2 é %.2f         - Resultado vencedor %d\n", pib1, pib2, resultadoPib);
@@ -218,7 +217,7 @@
     printf("Pib per Capita      : Carta1 é %.2f         - Carta2 é %.2f         - Resultado vencedor %d\n", pibper1, pibper2, resultadoPibpercapita);
     printf("Superpoder          : Carta1 é %.2f         - Carta2 é %.2f         - Resultado vencedor %d\n", superpoder1, superpoder2, resultadoSuperpoder);
 
-    //Exibir resultado se Carta1 ou Carta2 venceu
+    //Exibir resultado se Carta1 ou Carta2 venceu - Nível Mestre
     printf("Comparação de Cartas:\n");
     printf("População: %s venceu (%d)\n", resultadoPopulacao ? "Carta1" : "Carta2", resultadoPopulacao);
     printf("Área: %s venceu (%d)\n", resultadoArea ? "Carta1" : "Carta2", resultadoArea);

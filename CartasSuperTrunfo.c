@@ -2,21 +2,6 @@
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
-// Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-
 
     int main() {
     // Variáveis definidas - Super Trunfo - Nível Novato
@@ -32,15 +17,7 @@
     float densipop1, densipop2;
     float pibper1, pibper2;
         
-    //Variável Resultado - comparação dos valores dos produtos das cartas 1 e carta2 - Nível Mestre
-    int resultadoPopulacao;
-    int resultadoArea;
-    int resultadoPib;
-    int resultadoPonto;
-    int resultadoDensipop;
-    int resultadoPibpercapita;
-    int resultadoSuperpoder;
-          
+              
     // Título para exibição do projeto
     printf("Desafio Super Trunfo - Paises \n\n");
 
@@ -83,9 +60,10 @@
     
         if (area1 != 0.0f) {
             densipop1 = (float) populacao1 / area1;
-        }   else {
-            densipop1 = 0.0f; //Define um valor padrão seguro
-            printf("Atenção: Área da Carta1 é zero. Densidade populacional definida como 0.\n");
+        }   
+        else {
+        densipop1 = 0.0f; //Define um valor padrão seguro
+        printf("Atenção: Área da Carta1 é zero. Densidade populacional definida como 0.\n");
         }
 
 
@@ -93,13 +71,14 @@
     
         if (populacao1 != 0.0f) {
             pibper1 = pib1 * 1000000000.0 / (float) populacao1;
-        }   else {
-            pibper1 = 0.0f; //Define um valor padrão seguro
-            printf("Atenção: População da carta 1 é zero. Pib per Capita definido como 0\n");        
+        }
+        else {
+        pibper1 = 0.0f; //Define um valor padrão seguro
+        printf("Atenção: População da carta 1 é zero. Pib per Capita definido como 0\n");        
         } 
     
 
-    //Cálculo inverso_densidade1 - Superpoder Carta1 - Nível Mestre 
+    //Cálculo inverso_densidade1 - Superpoder Carta1 - Nível Mestre - Tema 2
         float inverso_densidade1 = 0.0f;
         if (densipop1 != 0.0f) {
             inverso_densidade1 = 1.0f / densipop1;    
@@ -124,7 +103,8 @@
     printf("PIB: %.2f bilhões de reais \n", pib1);
     printf("Número de Pontos Turísticos: %d \n", ponto1);
     printf("Densidade populacional: %.2f hab/km² \n", densipop1);
-    printf("PIB per Capita: %.2f reais \n\n", pibper1);
+    printf("PIB per Capita: %.2f reais \n", pibper1);
+    printf("Superpoder: %.2f \n\n", superpoder1);
           
     //Entrada de dados - Carta2
     printf("Digite abaixo as informações para Carta2 \n");
@@ -195,37 +175,20 @@
     printf("PIB: %.2f bilhões de reais \n", pib2);
     printf("Número de Pontos Turísticos: %d \n", ponto2);
     printf("Densidade Populacional: %.2f hab/km² \n", densipop2);
-    printf("PIB per Capita: %.2f reais\n\n", pibper2); 
-   
-    
-    //Cálculo comparação das Cartas 1 e 2 - Nível Mestre
-    resultadoPopulacao = populacao1 > populacao2;
-    resultadoArea = area1 > area2;
-    resultadoPib = pib1 > pib2;
-    resultadoPonto = ponto1 > ponto2;
-    resultadoDensipop = densipop1 < densipop2;
-    resultadoPibpercapita = pibper1 > pibper2;
-    resultadoSuperpoder = superpoder1 > superpoder2;
-    
-    //Exibir valores atributos - comparação das cartas 1 e 2 - Nível Mestre
-    printf("Comparação de Cartas - Valor dos atributos:\n");
-    printf("População           : Carta1 é %lu          - Carta2 é %lu          - Resultado vencedor %d \n", populacao1, populacao2, resultadoPopulacao);
-    printf("Área1               : Carta1 é %.2f         - Carta2 é %.2f         - Resultado vencedor %d\n", area1, area2, resultadoArea);
-    printf("Pib1                : Carta1 é %.2f         - Carta2 é %.2f         - Resultado vencedor %d\n", pib1, pib2, resultadoPib);
-    printf("Pontos Turísticos   : Carta1 é %d           - Carta2 é %d           - Resultado vencedor: %d \n", ponto1, ponto2, resultadoPonto);
-    printf("Densidade Populacional: Carta1 é %.2f       - Carta2 é %.2f         - Resultado vencedor %d\n", densipop1, densipop2, resultadoDensipop);
-    printf("Pib per Capita      : Carta1 é %.2f         - Carta2 é %.2f         - Resultado vencedor %d\n", pibper1, pibper2, resultadoPibpercapita);
-    printf("Superpoder          : Carta1 é %.2f         - Carta2 é %.2f         - Resultado vencedor %d\n", superpoder1, superpoder2, resultadoSuperpoder);
-
-    //Exibir resultado se Carta1 ou Carta2 venceu - Nível Mestre
-    printf("Comparação de Cartas:\n");
-    printf("População: %s venceu (%d)\n", resultadoPopulacao ? "Carta1" : "Carta2", resultadoPopulacao);
-    printf("Área: %s venceu (%d)\n", resultadoArea ? "Carta1" : "Carta2", resultadoArea);
-    printf("Pib: %s venceu (%d)\n", resultadoPib ? "Carta1" : "Carta2", resultadoPib);
-    printf("Pontos Turísticos: %s venceu (%d)\n", resultadoPonto ? "Carta1" : "Carta2", resultadoPonto);
-    printf("Densidade Populacional: %s venceu (%d)\n", resultadoDensipop ? "Carta1" : "Carta2", resultadoDensipop);
-    printf("Pib per Capita: %s venceu (%d)\n", resultadoPibpercapita ? "Carta1" : "Carta2", resultadoPibpercapita);
-    printf("Superpoder: %s venceu (%d)\n", resultadoSuperpoder ? "Carta1" : "Carta2", resultadoSuperpoder);
+    printf("PIB per Capita: %.2f reais\n", pibper2); 
+    printf("Superpoder: %.2f \n\n", superpoder2);
+        
+                
+    //Definição do Atributo - Comparação Carta Vencedora
+    printf("Comparação de Cartas (Atributo: Densidade Populacional):\n\n");
+    printf("Carta1 - %s (%s): %.2f \n", nomecid1, estado1, densipop1);
+    printf("Carta2 - %s (%s): %.2f \n", nomecid2, estado2, densipop2);
+        if(densipop1 < densipop2){
+        printf("Resultado: Carta1 (%s) venceu! \n", nomecid1);    
+    }   else { 
+        printf("Resultado: Carta2 (%s) venceu! \n", nomecid2);
+    } 
+      
     
     
     return 0;

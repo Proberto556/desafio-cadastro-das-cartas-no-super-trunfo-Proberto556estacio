@@ -4,7 +4,7 @@
 // Tema 1 - Cadastro das Cartas
 
     int main() {
-    // Variáveis definidas - Super Trunfo - Nível Novato
+    // Variáveis definidas - Super Trunfo - Nível Novato - Nível2
     char estado1[3], estado2[3];
     char codcar1[4], codcar2[4];
     char nomecid1[40], nomecid2[40]; 
@@ -13,7 +13,7 @@
     float pib1, pib2;
     int ponto1, ponto2; 
 
-    // Variáveis definidas - Super Trunfo - Nível Aventureiro
+    // Variáveis definidas - Super Trunfo - Nível Aventureiro - Nível2
     float densipop1, densipop2;
     float pibper1, pibper2;
         
@@ -150,7 +150,7 @@
         } 
 
 
-        //Cálculo inverso_densidade2 - Superpoder Carta1 - Nível Mestre 
+        //Cálculo inverso_densidade2 - Superpoder Carta1 - Nível Mestre  Nível2
         float inverso_densidade2 = 0.0f;
         if (densipop2 != 0.0f) {
             inverso_densidade2 = 1.0f / densipop2;}

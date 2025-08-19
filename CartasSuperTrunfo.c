@@ -63,7 +63,7 @@
         }   
         else {
         densipop1 = 0.0f; //Define um valor padrão seguro
-        printf("Atenção: Área da Carta1 é zero. Densidade populacional definida como 0.\n");
+        printf("Atenção: Área da Carta1 é zero. Densidade populacional definida como 0.\n\n");
         }
 
 
@@ -74,7 +74,7 @@
         }
         else {
         pibper1 = 0.0f; //Define um valor padrão seguro
-        printf("Atenção: População da carta 1 é zero. Pib per Capita definido como 0\n");        
+        printf("Atenção: População da carta 1 é zero. Pib per Capita definido como 0\n\n");        
         } 
     
 
@@ -136,7 +136,7 @@
             densipop2 =(float) populacao2 / area2;
         }   else {
             float densipop2 = 0.0f; //Define um valor padrão seguro
-            printf("Atenção: Área da Carta 2 é zero. Densidade populacional definida como 0.\n");
+            printf("Atenção: Área da Carta 2 é zero. Densidade populacional definida como 0.\n\n");
         }
 
     
@@ -146,7 +146,7 @@
             pibper2 = pib2 * 1000000000.0 / (float) populacao2;
         }   else {
             float pibper2 = 0.0f; //Define um valor padrão seguro
-            printf("Atenção: População da carta 2 é zero. Pib per Capita definido como 0\n");        
+            printf("Atenção: População da carta 2 é zero. Pib per Capita definido como 0\n\n");        
         } 
 
 

@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
+// Tema 1 - Cadastro das Cartas - Início
 
     int main() {
     // Variáveis definidas - Super Trunfo - Nível Novato - Nível2

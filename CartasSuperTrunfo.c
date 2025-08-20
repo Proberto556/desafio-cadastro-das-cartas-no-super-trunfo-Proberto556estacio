@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas - Início
+// Desafio Super Trunfo - Países //
+// Tema 1 - Cadastro das Cartas - Início //
 
     int main() {
-    // Variáveis definidas - Super Trunfo - Nível Novato - Nível2
+    // Variáveis definidas - Super Trunfo - Nível Novato - Nível2 //
     char estado1[3], estado2[3];
     char codcar1[4], codcar2[4];
     char nomecid1[40], nomecid2[40]; 

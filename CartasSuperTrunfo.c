@@ -18,7 +18,7 @@
     float pibper1, pibper2;
 
     // Variável de controle definida - Super Trunfo - Nível Aventureiro - Tema 3
-    int escolhaJogador;
+    int escolhaJogador1, escolhaJogador2;
                     
     // Título para exibição do projeto
     printf("Desafio Super Trunfo - Paises \n\n");
@@ -203,36 +203,102 @@
     printf("4 - PIB\n");
     printf("5 - Número de pontos turísticos\n");
     printf("6 - Densidade demográfica\n");
-    scanf("%d", &escolhaJogador);
+    scanf("%d", &escolhaJogador1);
 
-    //Escolha dda variável switch
-    switch (escolhaJogador)  
+    //Escolha dda variável switch Jogador1
+    switch (escolhaJogador1)  
     {
     case 1:
         printf("Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
         break;
     case 2:
-        printf("Jogador: População\n");
+        printf("Jogador1: População\n");
         break;
     case 3:
-        printf("Jogador: Área\n");
+        printf("Jogador1: Área\n");
         break;
     case 4:
-        printf("Jogador: PIB\n");
+        printf("Jogador1: PIB\n");
         break;
     case 5:
-        printf("Jogador: Número de pontos turísticos\n");
+        printf("Jogador1: Número de pontos turísticos\n");
         break;
     case 6:
-        printf("Jogador: Densidade demográfica\n");
+        printf("Jogador1: Densidade demográfica\n");
         break;
     default:
         printf("Opção invalida\n");
         break;
     }
     
+//Escolha dda variável switch Jogador1
+    switch (escolhaJogador1)  
+    {
+    case 1:
+        printf("Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        break;
+    case 2:
+        printf("Jogador1: População\n");
+        break;
+    case 3:
+        printf("Jogador1: Área\n");
+        break;
+    case 4:
+        printf("Jogador1: PIB\n");
+        break;
+    case 5:
+        printf("Jogador1: Número de pontos turísticos\n");
+        break;
+    case 6:
+        printf("Jogador1: Densidade demográfica\n");
+        break;
+    default:
+        printf("Opção invalida\n");
+        break;
+    }
 
-// Lógica do if 
+//Escolha dda variável switch Jogador2
+    switch (escolhaJogador2)  
+    {
+    case 1:
+        printf("Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        break;
+    case 2:
+        printf("Jogador2: População\n");
+        break;
+    case 3:
+        printf("Jogador2: Área\n");
+        break;
+    case 4:
+        printf("Jogador2: PIB\n");
+        break;
+    case 5:
+        printf("Jogador2: Número de pontos turísticos\n");
+        break;
+    case 6:
+        printf("Jogador2: Densidade demográfica\n");
+        break;
+    default:
+        printf("Opção invalida\n");
+        break;
+    }
+
+
+
+// Implementar a lógica do if 
+        if (escolhaJogador1 == escolhaJogador2 )
+        {
+            printf("*** Jogo Empatou ***\n");
+        }              
+        else if ((escolhaJogador1 = 2) && (populacao1 > populacao2))
+        {
+            printf("Jogador 1 venceu\n");
+        }
+         (escolhaJogador1 = 2) && (populacao1 > populacao2)
+        {
+            printf("Carta 1 venceu\n");
+        }
+        
         
         if (populacao1 > populacao2) 
         {

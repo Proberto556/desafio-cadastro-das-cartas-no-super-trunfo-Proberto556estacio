@@ -12,12 +12,14 @@
     float area1, area2;
     float pib1, pib2;
     int ponto1, ponto2; 
-
+    
     // Variáveis definidas - Super Trunfo - Nível Aventureiro - Nível2
     float densipop1, densipop2;
     float pibper1, pibper2;
-        
-              
+
+    // Variável de controle definida - Super Trunfo - Nível Aventureiro - Tema 3
+    int escolhaJogador;
+                    
     // Título para exibição do projeto
     printf("Desafio Super Trunfo - Paises \n\n");
 
@@ -40,6 +42,8 @@
 
     printf("A letra que representa o Estado seguida de um número entre 1 a 4 (ex: DF2, CE4): \n");
     scanf("%3s", codcar1);
+    
+    scanf("%*c");
 
     printf("O nome da cidade: \n");
     scanf(" %39[^\n]", nomecid1); 
@@ -179,17 +183,81 @@
     printf("Superpoder: %.2f \n\n", superpoder2);
         
                 
-    //Definição do Atributo - Comparação Carta Vencedora
+    //Definição do Atributo - Comparação Carta Vencedora ///
     printf("Comparação de Cartas (Atributo: Densidade Populacional):\n\n");
     printf("Carta1 - %s (%s): %.2f \n", nomecid1, estado1, densipop1);
     printf("Carta2 - %s (%s): %.2f \n", nomecid2, estado2, densipop2);
         if(densipop1 < densipop2){
-        printf("Resultado: Carta1 (%s) venceu! \n", nomecid1);    
+        printf("Resultado: Carta1 (%s) venceu! \n\n", nomecid1);    
     }   else { 
-        printf("Resultado: Carta2 (%s) venceu! \n", nomecid2);
+        printf("Resultado: Carta2 (%s) venceu! \n\n", nomecid2);
     } 
       
+ 
     
+    //Menu - Definição Escolha dos Atributos
+    printf("1 - Carta1: %s e Carta2: %s *** \n", nomecid1, nomecid2);
+    printf("Escolha um Atributo para comparar as Cartas\n");
+    printf("2 - População\n");
+    printf("3 - Área\n");
+    printf("4 - PIB\n");
+    printf("5 - Número de pontos turísticos\n");
+    printf("6 - Densidade demográfica\n");
+    scanf("%d", &escolhaJogador);
+
+    //Escolha dda variável switch
+    switch (escolhaJogador)  
+    {
+    case 1:
+        printf("Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        break;
+    case 2:
+        printf("Jogador: População\n");
+        break;
+    case 3:
+        printf("Jogador: Área\n");
+        break;
+    case 4:
+        printf("Jogador: PIB\n");
+        break;
+    case 5:
+        printf("Jogador: Número de pontos turísticos\n");
+        break;
+    case 6:
+        printf("Jogador: Densidade demográfica\n");
+        break;
+    default:
+        printf("Opção invalida\n");
+        break;
+    }
+    
+
+// Lógica do if 
+        
+        if (populacao1 > populacao2) 
+        {
+            printf("Carta 1 venceu\n");
+        }   if (area1 > area2)
+        {
+                printf("Carta 1 venceu\n");
+        }       if (pib1 > pib2)
+        {       
+                    printf("Carta 1 venceu\n");
+        }           if (ponto1 > ponto2)
+        {
+                        printf("Carta 1 venceu \n");
+        }               if (densipop1 < densipop2)
+        {
+                            printf("Carta1 venceu\n");
+        }   else {
+            printf("Carta 2 venceu\n");    
+        }
+
+                            
+                   
+  
+
+   
     
     return 0;
 }

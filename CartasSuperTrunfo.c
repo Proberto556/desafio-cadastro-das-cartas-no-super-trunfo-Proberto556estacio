@@ -297,6 +297,8 @@
                         (escolhaJogador1 = 6) && (densipop1 < densipop2))
         {
             printf("Jogador 1 venceu\n");
+        }   else {
+            printf("Jogador 2 venceu\n");        
         }
 
       

@@ -288,37 +288,20 @@
 // Implementar a lógica do if 
         if (escolhaJogador1 == escolhaJogador2 )
         {
-            printf("*** Jogo Empatou ***\n");
+            printf("Jogo Empatou\n");
         }              
-        else if ((escolhaJogador1 = 2) && (populacao1 > populacao2))
+        else if ((escolhaJogador1 = 2) && (populacao1 > populacao2) ||
+                  (escolhaJogador1 = 3) && (area1 > area2) || 
+                    (escolhaJogador1 = 4) && (pib1 > pib2) ||
+                      (escolhaJogador1 = 5) && (ponto1 > ponto2) ||
+                        (escolhaJogador1 = 6) && (densipop1 < densipop2))
         {
             printf("Jogador 1 venceu\n");
         }
-         (escolhaJogador1 = 2) && (populacao1 > populacao2)
-        {
-            printf("Carta 1 venceu\n");
-        }
-        
-        
-        if (populacao1 > populacao2) 
-        {
-            printf("Carta 1 venceu\n");
-        }   if (area1 > area2)
-        {
-                printf("Carta 1 venceu\n");
-        }       if (pib1 > pib2)
-        {       
-                    printf("Carta 1 venceu\n");
-        }           if (ponto1 > ponto2)
-        {
-                        printf("Carta 1 venceu \n");
-        }               if (densipop1 < densipop2)
-        {
-                            printf("Carta1 venceu\n");
-        }   else {
-            printf("Carta 2 venceu\n");    
-        }
 
+      
+        
+        
                             
                    
   

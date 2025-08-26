@@ -205,8 +205,9 @@
     printf("5 - Densidade Populacional\n");
     scanf("%d", &escolhaJogador);
 
-    //Escolha da variável switch Jogador
-    switch (escolhaJogador)  
+    //Escolha da variável utilizando switch case
+    /*switch (escolhaJogador)  
+    
     {
         case 1:
         printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
@@ -268,9 +269,57 @@
         break;
     }
     
-        
-        
-                            
+*/
+    //Escolha da variável utilizando if - if else
+    switch (escolhaJogador)
+
+    if (escolhaJogador == 1) {
+        if (populacao1 > populacao2) {
+        printf("Carta 1 venceu!\n");
+        } else if (populacao1 < populacao2) {
+        printf("Carta 2 venceu\n");    
+        } else {
+        printf("Empate na População\n");
+        }  
+
+    } else if (escolhaJogador == 2) {
+        if (area1 > area2) {
+        printf("Carta 1 venceu!\n");    
+        } else if (area1 < area2) {
+        printf("Carta 2 venceu\n");    
+        } else {
+        printf("Empate na Área\n");
+        }  
+    
+    } else if (escolhaJogador == 3) {
+        if (pib1 > pib2) {
+        printf("Carta 1 venceu!\n");    
+        } else if (pib1 < pib2) {
+        printf("Carta 2 venceu\n");    
+        } else {
+        printf("Empate na Pib\n");
+        }  
+
+    } else if (escolhaJogador == 4) {
+        if (ponto1 > ponto2) {
+        printf("Carta 1 venceu!\n");    
+        } else if (ponto1 < ponto2) {
+        printf("Carta 2 venceu\n");    
+        } else {
+        printf("Empate na Ponto\n");
+        }  
+
+    } else if (escolhaJogador == 5) {
+        if (densipop1 < densipop2) {
+        printf("Carta 1 venceu!\n");    
+        } else if (densipop1 > densipop2) {
+        printf("Carta 2 venceu\n");    
+        } else {
+        printf("Empate na Densidade Populacional\n");
+        }  
+
+    } else
+        printf("Opção invalida. Digite um valor de 1 a 5\n");                        
                    
   
 

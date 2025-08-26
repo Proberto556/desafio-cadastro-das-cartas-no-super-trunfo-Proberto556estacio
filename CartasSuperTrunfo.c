@@ -205,7 +205,7 @@
     printf("5 - Densidade Populacional\n");
     scanf("%d", &escolhaJogador);
 
-    //Escolha da variável utilizando switch case
+    //Comparação Utilizando - Switch Case
     /*switch (escolhaJogador)  
     
     {
@@ -216,7 +216,7 @@
         printf("Carta2 - %lu\n", populacao2);
             if(populacao1 > populacao2){
         printf("Resultado: Carta1 (%s) venceu! \n\n", nomecid1);    
-    }   else { 
+    }   else if { 
         printf("Resultado: Carta2 (%s) venceu! \n\n", nomecid2);
     } 
         break;
@@ -270,14 +270,14 @@
     }
     
 */
-    //Escolha da variável utilizando if - if else
+    //Comparação Utilizando - if - if else
       if (escolhaJogador == 1) {
         if (populacao1 > populacao2) {
         printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
         printf("Atributo: População\n");
         printf("Carta1 - %lu\n", populacao1);
         printf("Carta2 - %lu\n", populacao2);
-        printf("Carta1 %S venceu!\n", nomecid1);
+        printf("Carta1 %s venceu!\n", nomecid1);
         } else if (populacao1 < populacao2) {
         printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
         printf("Atributo: População\n");
@@ -285,47 +285,96 @@
         printf("Carta2 - %lu\n", populacao2);
         printf("Carta2 - %s venceu!\n", nomecid2);   
         } else {
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: População\n");
         printf("Carta1 - %lu\n", populacao1);
         printf("Carta2 - %lu\n", populacao2);
-        printf("Empate na População\n");
+        printf("Empate: População\n");
         }  
 
     } else if (escolhaJogador == 2) {
         if (area1 > area2) {
-        printf("Carta 1 venceu!\n");    
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: Área\n");
+        printf("Carta1 - %.2f\n", area1);
+        printf("Carta2 - %.2f\n", area2);
+        printf("Carta1 %s venceu!\n", nomecid1);
         } else if (area1 < area2) {
-        printf("Carta 2 venceu\n");    
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: Área\n");
+        printf("Carta1 - %.2f\n", area1);
+        printf("Carta2 - %.2f\n", area2);
+        printf("Carta2 %s venceu!\n", nomecid2);  
         } else {
-        printf("Empate na Área\n");
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: Área\n");
+        printf("Carta1 - %.2f\n", area1);
+        printf("Carta2 - %.2f\n", area2);
+        printf("Empate: Área\n");
         }  
     
     } else if (escolhaJogador == 3) {
         if (pib1 > pib2) {
-        printf("Carta 1 venceu!\n");    
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: Pib\n");
+        printf("Carta1 - %.2f\n", pib1);
+        printf("Carta2 - %.2f\n", pib2);
+        printf("Carta1 %s venceu!\n", nomecid1);    
         } else if (pib1 < pib2) {
-        printf("Carta 2 venceu\n");    
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: Pib\n");
+        printf("Carta1 - %.2f\n", pib1);
+        printf("Carta2 - %.2f\n", pib2);
+        printf("Carta2 %s venceu!\n", nomecid2);     
         } else {
-        printf("Empate na Pib\n");
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: Pib\n");
+        printf("Carta1 - %.2f\n", pib1);
+        printf("Carta2 - %.2f\n", pib2);
+        printf("Empate: Pib\n");
         }  
 
     } else if (escolhaJogador == 4) {
         if (ponto1 > ponto2) {
-        printf("Carta 1 venceu!\n");    
-        } else if (ponto1 < ponto2) {
-        printf("Carta 2 venceu\n");    
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: Número de pontos turísticos\n");
+        printf("Carta1 - %d\n", ponto1);
+        printf("Carta2 - %d\n", ponto2);
+        printf("Carta1 %s venceu!\n", nomecid1);    
+        } else if (ponto1 < ponto2 ) {
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: Número de pontos turísticos\n");
+        printf("Carta1 - %d\n", ponto1);
+        printf("Carta2 - %d\n", ponto2);
+        printf("Carta2 %s venceu!\n", nomecid2);     
         } else {
-        printf("Empate na Ponto\n");
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: Número de pontos turísticos\n");
+        printf("Carta1 - %d\n", ponto1);
+        printf("Carta2 - %d\n", ponto2);
+        printf("Empate: Número de pontos turísticos\n");
         }  
 
     } else if (escolhaJogador == 5) {
         if (densipop1 < densipop2) {
-        printf("Carta 1 venceu!\n");    
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: Densidade Populacional\n");
+        printf("Carta1 - %.2f\n", densipop1);
+        printf("Carta2 - %.2f\n", densipop2);
+        printf("Carta1 %s venceu!\n", nomecid1);    
         } else if (densipop1 > densipop2) {
-        printf("Carta 2 venceu\n");    
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: Densidade Populacional\n");
+        printf("Carta1 - %.2f\n", densipop1);
+        printf("Carta2 - %.2f\n", densipop2);
+        printf("Carta2 %s venceu!\n", nomecid2);     
         } else {
-        printf("Empate na Densidade Populacional\n");
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: Densidade Populacional\n");
+        printf("Carta1 - %.2f\n", densipop1);
+        printf("Carta2 - %.2f\n", densipop2);
+        printf("Empate: Densidade Populacional\n");
         }  
-
     } else
         printf("Opção invalida. Digite um valor de 1 a 5\n");                        
                    

@@ -271,14 +271,22 @@
     
 */
     //Escolha da variável utilizando if - if else
-    switch (escolhaJogador)
-
-    if (escolhaJogador == 1) {
+      if (escolhaJogador == 1) {
         if (populacao1 > populacao2) {
-        printf("Carta 1 venceu!\n");
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: População\n");
+        printf("Carta1 - %lu\n", populacao1);
+        printf("Carta2 - %lu\n", populacao2);
+        printf("Carta1 %S venceu!\n", nomecid1);
         } else if (populacao1 < populacao2) {
-        printf("Carta 2 venceu\n");    
+        printf("*** Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Atributo: População\n");
+        printf("Carta1 - %lu\n", populacao1);
+        printf("Carta2 - %lu\n", populacao2);
+        printf("Carta2 - %s venceu!\n", nomecid2);   
         } else {
+        printf("Carta1 - %lu\n", populacao1);
+        printf("Carta2 - %lu\n", populacao2);
         printf("Empate na População\n");
         }  
 

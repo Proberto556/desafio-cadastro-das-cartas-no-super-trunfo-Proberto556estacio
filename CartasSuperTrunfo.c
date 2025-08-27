@@ -4,7 +4,7 @@
 // Tema 1 - Cadastro das Cartas - Início //
 
     int main() {
-    // Variáveis definidas - Super Trunfo - Nível Novato - Nível2 //
+    // Variáveis definidas - Super Trunfo - Nível Novato - Tema 2 //
     char estado1[3], estado2[3];
     char codcar1[4], codcar2[4];
     char nomecid1[40], nomecid2[40]; 
@@ -13,11 +13,11 @@
     float pib1, pib2;
     int ponto1, ponto2; 
     
-    // Variáveis definidas - Super Trunfo - Nível Aventureiro - Nível2
+    // Variáveis definidas - Super Trunfo - Nível Aventureiro - Tema 2 //
     float densipop1, densipop2;
     float pibper1, pibper2;
 
-    // Variável de controle definida - Super Trunfo - Nível Aventureiro - Tema 3
+    // Variável de controle definida - Super Trunfo - Nível Aventureiro - Tema 3 //
     int escolhaJogador;
                     
     // Título para exibição do projeto
@@ -60,7 +60,7 @@
     printf("Número de pontos turísticos ref. a cidade: \n");
     scanf("%d", &ponto1);
  
-    //Cálculo da Densidade populacional carta1 (Utilizando conversão explicita e proteção Contra divisão por Zero) - Nível Aventureiro
+    //Cálculo da Densidade populacional carta1 (Utilizando conversão explicita e proteção Contra divisão por Zero) - Nível Aventureiro - Tema 2
     
         if (area1 != 0.0f) {
             densipop1 = (float) populacao1 / area1;
@@ -71,7 +71,7 @@
         }
 
 
-    //Cálculo Pib per Capita carta1 (Utilizando conversão explicita e proteção Contra divisão por Zero) - Nível Aventureiro
+    //Cálculo Pib per Capita carta1 (Utilizando conversão explicita e proteção Contra divisão por Zero) - Nível Aventureiro - Tema 2
     
         if (populacao1 != 0.0f) {
             pibper1 = pib1 * 1000000000.0 / (float) populacao1;
@@ -134,7 +134,7 @@
     printf("O número de Pontos Turísticos ref. a cidade: \n");
     scanf("%d", &ponto2);
 
-        //Cálculo da Densidade populacional carta2 (Utilizando conversão explicita e proteção Contra divisão por Zero) - Nível Aventureiro
+        //Cálculo da Densidade populacional carta2 (Utilizando conversão explicita e proteção Contra divisão por Zero) - Nível Aventureiro - Tema 2
     
         if (area2 != 0.0f) {
             densipop2 =(float) populacao2 / area2;
@@ -144,7 +144,7 @@
         }
 
     
-        //Cálculo Pib per Capita carta2 (Utilizando conversão explicita e proteção Contra divisão por Zero) - Nível Aventureiro
+        //Cálculo Pib per Capita carta2 (Utilizando conversão explicita e proteção Contra divisão por Zero) - Nível Aventureiro - Tema 2
     
         if (populacao2 != 0.0f) {
             pibper2 = pib2 * 1000000000.0 / (float) populacao2;
@@ -154,7 +154,7 @@
         } 
 
 
-        //Cálculo inverso_densidade2 - Superpoder Carta1 - Nível Mestre  Nível2
+        //Cálculo inverso_densidade2 - Superpoder Carta1 - Nível Mestre  - Tema 2
         float inverso_densidade2 = 0.0f;
         if (densipop2 != 0.0f) {
             inverso_densidade2 = 1.0f / densipop2;}
@@ -165,7 +165,7 @@
         }  
     
 
-    //Cálculo Superpoder das Carta2 - Nível Mestre  
+    //Cálculo Superpoder das Carta2 - Nível Mestre  - Tema 2
     float superpoder2 = (float) populacao2 +  area2 + pib2 + (float) ponto2 + inverso_densidade2 + pibper2; 
     printf("Superpoder Carta2 = %.2f \n\n", superpoder2);
    
@@ -183,7 +183,7 @@
     printf("Superpoder: %.2f \n\n", superpoder2);
         
                 
-    //Definição do Atributo - Comparação Carta Vencedora ///
+    //Definição do Atributo - Comparação Carta Vencedora - Desafio Nível Novato - Tema 3 
     printf("Comparação de Cartas (Atributo: Densidade Populacional):\n\n");
     printf("Carta1 - %s (%s): %.2f \n", nomecid1, estado1, densipop1);
     printf("Carta2 - %s (%s): %.2f \n", nomecid2, estado2, densipop2);
@@ -193,8 +193,8 @@
         printf("Resultado: Carta2 (%s) venceu! \n\n", nomecid2);
     } 
       
- 
-    
+    //Comparação Utilizando - Switch Case - Desafio Nível Aventureiro - Tema 3 
+
     //Menu - Definição Escolha dos Atributos
     printf("Carta1: %s e Carta2: %s *** \n", nomecid1, nomecid2);
     printf("Escolha um Atributo para comparar as Cartas\n");
@@ -205,7 +205,7 @@
     printf("5 - Densidade Populacional\n");
     scanf("%d", &escolhaJogador);
 
-    //Comparação Utilizando - Switch Case
+    
     switch (escolhaJogador)  
     {
     case 1: 

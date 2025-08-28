@@ -19,6 +19,10 @@
 
     // Variável de controle definida - Super Trunfo - Nível Aventureiro - Tema 3 //
     int escolhaJogador;
+
+    // Acrescimo variáveis - Nível Mestre - Tema 3
+    int resultado1, resultado2;
+    char primeiroAtributo, segundoAtributo;
                     
     // Título para exibição do projeto
     printf("Desafio Super Trunfo - Paises \n\n");
@@ -278,9 +282,118 @@
         break;
     }
     
+    //DESAFIO - TEMA 3 - NÍVEL MESTRE
 
+    // Definição valores verdadeiro e falso
+    populacao1 = 1;
+    populacao2 = 0;
+    area1 = 1;
+    area2 = 0;
+    pib1 = 1;
+    pib2 = 0;
+    ponto1 = 1;
+    ponto2 = 0;
+    densipop1 = 1;
+    densipop2 = 0;
+    pibper1 = 1;
+    pibper2 = 0;
+    superpoder1 = 1;
+    superpoder2 = 0;
+
+    //Menu Início do jogo - Para Primeiro Atributo
+    printf("Menu - Atributo - Jogo da Comparação\n");
+    printf("Escolha o primeiro attributo\n");
+    printf("A. População\n");
+    printf("B. Área\n");
+    printf("C. PIB\n");
+    printf("D. Número de Pontos Turísticos\n");
+    printf("E. Densidade Populacional\n");
+    printf("F. PIB Per cápita)\n");
+
+    //Definição - Primeiro Atributo
+    printf("Escolha a comparação\n");
+    scanf(" %c", &primeiroAtributo);
+
+    switch (primeiroAtributo)
+    {
+    case 'A':
+    case 'a':
+         printf("Você escolheu - Atributo População\n");
+         resultado1 = populacao1 > populacao2 ? 1 : 0;
+        break:
+    case 'B':
+    case 'b':
+         printf("Você escolheu - Atributo Área\n");
+         resultado1 = area1 > area2 ? 1 : 0;
+         break;
+    case 'C':
+    case 'c':
+         printf("Você escolheu - Atributo PIB\n");
+         resultado1 = pib1 > pib2 ? 1 : 0;
+         break;
+    case 'D':
+    case 'd':
+         printf("Você escolheu - Atributo Número de Pontos Turísticos\n");
+         resultado1 = ponto1 > ponto2 ? 1 : 0;
+         break;
+    case 'E':
+    case 'e':
+         printf("Você escolheu - Atributo Densidade Populacional\n");
+         resultado1 = densipop1 < densipop2 ? 1 : 0;
+         break;
+    case 'F':
+    case 'f':
+         printf("Voce escolheu - Atributo PIB Per Cápita\n");
+         resultado1 = pibper1 > pibper2 ? 1 : 0;   
+    default:
+        printf("Opção de jogo invalida\n");
+        break;
+    }
+
+    //Menu Início do jogo - Para Segundo Atributo
+    printf("Menu - Atributo - Jogo da Comparação\n");
+    printf("Escolha o segundo atributo\n");
+    printf("A. População\n");
+    printf("B. Área\n");
+    printf("C. PIB\n");
+    printf("D. Número de Pontos Turísticos\n");
+    printf("E. Densidade Populacional\n");
+    printf("F. PIB Per cápita)\n");
+
+    printf("Escolha a comparação\n");
+    scanf(" %c", &segundoAtributo);
+
+    if (primeiroAtributo == segundoAtributo)
+    {
+        printf("Você escolheu o mesmo atributo!\n");
+    }   else {
+        switch(segundoAtributo)
+        {
+        case constant expression:
+            /* code */
+            break;
+        
+
+            
+        default:
+            break;
+        }
+    }
     
- 
+
+
+
+
+ /*   
+ unsigned long int populacao1, populacao2;
+    float area1, area2;
+    float pib1, pib2;
+    int ponto1, ponto2; 
+    
+    // Variáveis definidas - Super Trunfo - Nível Aventureiro - Tema 2 //
+    float densipop1, densipop2;
+    float pibper1, pibper2;  
+*/
 
    
     

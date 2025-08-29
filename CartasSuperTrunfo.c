@@ -405,7 +405,7 @@
     }
     
 //Lógica do jogo
-    printf("Resultado1 ")
+    printf("Resultado1 ");
 
 
 

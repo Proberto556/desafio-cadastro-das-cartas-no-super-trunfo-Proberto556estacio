@@ -311,7 +311,7 @@
     printf("F. PIB Per cápita)\n");
 
     //Definição - Primeiro Atributo
-    printf("Escolha a comparação\n");
+    printf("Escolha a comparação:\n");
     scanf(" %c", &primeiroAtributo);
 
     switch (primeiroAtributo)
@@ -320,7 +320,7 @@
     case 'a':
          printf("Você escolheu - Atributo População\n");
          resultado1 = populacao1 > populacao2 ? 1 : 0;
-        break:
+        break;
     case 'B':
     case 'b':
          printf("Você escolheu - Atributo Área\n");
@@ -360,26 +360,52 @@
     printf("E. Densidade Populacional\n");
     printf("F. PIB Per cápita)\n");
 
-    printf("Escolha a comparação\n");
+    printf("Escolha a comparação:\n");
     scanf(" %c", &segundoAtributo);
 
     if (primeiroAtributo == segundoAtributo)
     {
         printf("Você escolheu o mesmo atributo!\n");
     }   else {
-        switch(segundoAtributo)
-        {
-        case constant expression:
-            /* code */
-            break;
-        
-
-            
-        default:
-            break;
-        }
+    switch (segundoAtributo)
+    {
+    case 'A':
+    case 'a':
+         printf("Você escolheu - Atributo População\n");
+         resultado2 = populacao1 > populacao2 ? 1 : 0;
+        break;
+    case 'B':
+    case 'b':
+         printf("Você escolheu - Atributo Área\n");
+         resultado2 = area1 > area2 ? 1 : 0;
+         break;
+    case 'C':
+    case 'c':
+         printf("Você escolheu - Atributo PIB\n");
+         resultado2 = pib1 > pib2 ? 1 : 0;
+         break;
+    case 'D':
+    case 'd':
+         printf("Você escolheu - Atributo Número de Pontos Turísticos\n");
+         resultado2 = ponto1 > ponto2 ? 1 : 0;
+         break;
+    case 'E':
+    case 'e':
+         printf("Você escolheu - Atributo Densidade Populacional\n");
+         resultado2 = densipop1 < densipop2 ? 1 : 0;
+         break;
+    case 'F':
+    case 'f':
+         printf("Voce escolheu - Atributo PIB Per Cápita\n");
+         resultado2 = pibper1 > pibper2 ? 1 : 0;   
+    default:
+        printf("Opção de jogo invalida\n");
+        break;
+    }
     }
     
+//Lógica do jogo
+    printf("Resultado1 ")
 
 
 

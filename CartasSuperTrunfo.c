@@ -143,7 +143,7 @@
         if (area2 != 0.0f) {
             densipop2 =(float) populacao2 / area2;
         }   else {
-            float densipop2 = 0.0f; //Define um valor padrão seguro
+            densipop2 = 0.0f; //Define um valor padrão seguro
             printf("Atenção: Área da Carta 2 é zero. Densidade populacional definida como 0.\n\n");
         }
 
@@ -153,7 +153,7 @@
         if (populacao2 != 0.0f) {
             pibper2 = pib2 * 1000000000.0 / (float) populacao2;
         }   else {
-            float pibper2 = 0.0f; //Define um valor padrão seguro
+            pibper2 = 0.0f; //Define um valor padrão seguro
             printf("Atenção: População da carta 2 é zero. Pib per Capita definido como 0\n\n");        
         } 
 
@@ -302,7 +302,7 @@
 
     //Menu Início do jogo - Para Primeiro Atributo
     printf("Menu - Atributo - Jogo da Comparação\n");
-    printf("Escolha o primeiro attributo\n");
+    printf("Escolha o primeiro attributo.\n");
     printf("A. População\n");
     printf("B. Área\n");
     printf("C. PIB\n");
@@ -318,41 +318,48 @@
     {
     case 'A':
     case 'a':
-         printf("Você escolheu - Atributo População\n");
+         printf("Você escolheu atributo População\n");
+         printf("Escolha o segundo atributo\n");
          resultado1 = populacao1 > populacao2 ? 1 : 0;
         break;
     case 'B':
     case 'b':
-         printf("Você escolheu - Atributo Área\n");
+         printf("Você escolheu atributo Área\n");
+         printf("Escolha o segundo atributo\n");
          resultado1 = area1 > area2 ? 1 : 0;
          break;
     case 'C':
     case 'c':
-         printf("Você escolheu - Atributo PIB\n");
+         printf("Você escolheu atributo PIB\n");
+         printf("Escolha o segundo atributo\n");
          resultado1 = pib1 > pib2 ? 1 : 0;
          break;
     case 'D':
     case 'd':
-         printf("Você escolheu - Atributo Número de Pontos Turísticos\n");
+         printf("Você escolheu atributo Número de Pontos Turísticos\n");
+         printf("Escolha o segundo atributo\n");
          resultado1 = ponto1 > ponto2 ? 1 : 0;
          break;
     case 'E':
     case 'e':
-         printf("Você escolheu - Atributo Densidade Populacional\n");
+         printf("Você escolheu atributo Densidade Populacional\n");
+         printf("Escolha o segundo atributo\n");
          resultado1 = densipop1 < densipop2 ? 1 : 0;
          break;
     case 'F':
     case 'f':
-         printf("Voce escolheu - Atributo PIB Per Cápita\n");
+         printf("Voce escolheu atributo PIB Per Cápita\n\n");
+         printf("Escolha o segundo atributo\n\n");
          resultado1 = pibper1 > pibper2 ? 1 : 0;   
+    break;
     default:
         printf("Opção de jogo invalida\n");
         break;
     }
 
     //Menu Início do jogo - Para Segundo Atributo
-    printf("Menu - Atributo - Jogo da Comparação\n");
-    printf("Escolha o segundo atributo\n");
+    printf("Escolha o segundo atributo.\n");
+    printf("Lembresse!! Não pode ser o mesmo atributo do primeiro.\n");
     printf("A. População\n");
     printf("B. Área\n");
     printf("C. PIB\n");
@@ -371,57 +378,52 @@
     {
     case 'A':
     case 'a':
-         printf("Você escolheu - Atributo População\n");
+         printf("Você escolheu atributo População\n");
          resultado2 = populacao1 > populacao2 ? 1 : 0;
         break;
     case 'B':
     case 'b':
-         printf("Você escolheu - Atributo Área\n");
+         printf("Você escolheu atributo Área\n");
          resultado2 = area1 > area2 ? 1 : 0;
          break;
     case 'C':
     case 'c':
-         printf("Você escolheu - Atributo PIB\n");
+         printf("Você escolheu atributo PIB\n");
          resultado2 = pib1 > pib2 ? 1 : 0;
          break;
     case 'D':
     case 'd':
-         printf("Você escolheu - Atributo Número de Pontos Turísticos\n");
+         printf("Você escolheu atributo Número de Pontos Turísticos\n");
          resultado2 = ponto1 > ponto2 ? 1 : 0;
          break;
     case 'E':
     case 'e':
-         printf("Você escolheu - Atributo Densidade Populacional\n");
+         printf("Você escolheu atributo Densidade Populacional\n");
          resultado2 = densipop1 < densipop2 ? 1 : 0;
          break;
     case 'F':
     case 'f':
-         printf("Voce escolheu - Atributo PIB Per Cápita\n");
-         resultado2 = pibper1 > pibper2 ? 1 : 0;   
+         printf("Voce escolheu atributo PIB Per Cápita\n");
+         resultado2 = pibper1 > pibper2 ? 1 : 0;  
+    break; 
     default:
         printf("Opção de jogo invalida\n");
         break;
     }
     }
     
-//Lógica do jogo
-    printf("Resultado1 ");
+//Lógica do jogo comparação atributos
+    if (resultado1 && resultado2)
+    {
+        printf("Que alegria, vocé é o grande vencedor! \n");
+    } else if (resultado1 != resultado2) {
+        printf("O jogo empatou! \n");
+    } else {
+        printf("Que pena, você perdeu!\n");
+    }   
 
-
-
-
- /*   
- unsigned long int populacao1, populacao2;
-    float area1, area2;
-    float pib1, pib2;
-    int ponto1, ponto2; 
     
-    // Variáveis definidas - Super Trunfo - Nível Aventureiro - Tema 2 //
-    float densipop1, densipop2;
-    float pibper1, pibper2;  
-*/
-
-   
+ 
     
     return 0;
 }

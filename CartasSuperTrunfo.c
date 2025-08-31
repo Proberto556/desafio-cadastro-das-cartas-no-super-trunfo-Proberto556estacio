@@ -285,14 +285,14 @@
     //DESAFIO - TEMA 3 - NÍVEL MESTRE
 
     // Definição valores verdadeiro e falso
-    populacao1 = 1;
-    populacao2 = 0;
-    area1 = 1;
-    area2 = 0;
-    pib1 = 1;
-    pib2 = 0;
-    ponto1 = 1;
-    ponto2 = 0;
+    populacao1 = 12325000;
+    populacao2 = 6748000;
+    area1 = 1521.11;
+    area2 = 1200.25;
+    pib1 = 699.28;
+    pib2 = 300.50;
+    ponto1 = 50;
+    ponto2 = 30;
     densipop1 = 1;
     densipop2 = 0;
     pibper1 = 1;
@@ -423,19 +423,21 @@
     }   
 
 //Soma dos atributos escolhidos
-    if (resultadofinal = ((populacao1 + area1)) || (populacao2 + area2))
+    if ((populacao1 + area1) || (populacao1 + pib1))
     {
-        printf("Você ganhou o jogo\n");
+      printf("Você ganhou o jogo\n");
+    } else if ((populacao2 + area2) || (populacao2 + pib2)) {
+      printf("Você perdeu o jogo\n");
+    } else {
+        printf("Jogo empatou \n");
     }
 
 
+/*
+printf("Nome das cidades (Carta1): %s  (Carta2): %s \n", nomecid1, nomecid2);
 
-/*Cálculo Superpoder das Carta1 - Nível Mestre  
-    float superpoder1 = (float) populacao1 +  area1 + pib1 + (float) ponto1 + inverso_densidade1 + pibper1; 
-    printf("Superpoder Carta1 = %.2f \n", superpoder1);
+
 */
-    
-
 
 
 

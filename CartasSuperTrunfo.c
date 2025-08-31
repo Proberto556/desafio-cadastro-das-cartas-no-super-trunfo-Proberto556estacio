@@ -21,7 +21,7 @@
     int escolhaJogador;
 
     // Acrescimo variáveis - Nível Mestre - Tema 3
-    int resultado1, resultado2;
+    int resultado1, resultado2, resultadofinal;
     char primeiroAtributo, segundoAtributo;
                     
     // Título para exibição do projeto
@@ -226,7 +226,7 @@
         }
         break;
     case 2:
-        printf("Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Nome das cidades (Carta1): %s  (Carta2): %s \n", nomecid1, nomecid2);
         printf("Atributo: Área\n");
         printf("Carta1 - %.2f\n", area1);
         printf("Carta2 - %.2f\n", area2);
@@ -239,7 +239,7 @@
         }
         break;
     case 3:
-        printf("Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Nome das cidades (Carta1): %s  (Carta2): %s \n", nomecid1, nomecid2);
         printf("Atributo: PIB\n");
         printf("Carta1 - %.2f\n", pib1);
         printf("Carta2 - %.2f\n", pib2);
@@ -252,7 +252,7 @@
         }
         break;
     case 4:
-        printf("Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Nome das cidades (Carta1): %s  (Carta2): %s \n", nomecid1, nomecid2);
         printf("Atributo: Número de pontos turísticos\n");
         printf("Carta1 - %d\n", ponto1);
         printf("Carta2 - %d\n", ponto2);
@@ -265,7 +265,7 @@
         }
         break;
     case 5:
-        printf("Nome das cidades (Carta1): %s  (Carta2): %s *** \n", nomecid1, nomecid2);
+        printf("Nome das cidades (Carta1): %s  (Carta2): %s \n", nomecid1, nomecid2);
         printf("Atributo: Densidade populacional\n");
         printf("Carta1 - %.2f\n", densipop1);
         printf("Carta2 - %.2f\n", densipop2);
@@ -422,8 +422,24 @@
         printf("Que pena, você perdeu!\n");
     }   
 
+//Soma dos atributos escolhidos
+    if (resultadofinal = ((populacao1 + area1)) || (populacao2 + area2))
+    {
+        printf("Você ganhou o jogo\n");
+    }
+
+
+
+/*Cálculo Superpoder das Carta1 - Nível Mestre  
+    float superpoder1 = (float) populacao1 +  area1 + pib1 + (float) ponto1 + inverso_densidade1 + pibper1; 
+    printf("Superpoder Carta1 = %.2f \n", superpoder1);
+*/
     
- 
-    
+
+
+
+
+
+
     return 0;
 }

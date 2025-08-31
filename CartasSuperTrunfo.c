@@ -21,7 +21,7 @@
     int escolhaJogador;
 
     // Acrescimo variáveis - Nível Mestre - Tema 3
-    int resultado1, resultado2, resultadofinal;
+    int resultado1, resultado2;
     char primeiroAtributo, segundoAtributo;
                     
     // Título para exibição do projeto
@@ -284,7 +284,7 @@
     
     //DESAFIO - TEMA 3 - NÍVEL MESTRE
 
-    // Definição valores verdadeiro e falso
+    // Definição valores 
     populacao1 = 12325000;
     populacao2 = 6748000;
     area1 = 1521.11;
@@ -293,12 +293,11 @@
     pib2 = 300.50;
     ponto1 = 50;
     ponto2 = 30;
-    densipop1 = 1;
-    densipop2 = 0;
-    pibper1 = 1;
-    pibper2 = 0;
-    superpoder1 = 1;
-    superpoder2 = 0;
+    densipop1 = 8102.64;
+    densipop2 = 5622.16;
+    pibper1 = 56736.71;
+    pibper2 = 44521.71;
+    
 
     //Menu Início do jogo - Para Primeiro Atributo
     printf("Menu - Atributo - Jogo da Comparação\n");
@@ -320,13 +319,15 @@
     case 'a':
          printf("Você escolheu atributo População\n");
          printf("Escolha o segundo atributo\n");
-         resultado1 = populacao1 > populacao2 ? 1 : 0;
-        break;
+         resultado1 = populacao1 > populacao2 ? 
+         printf("Carta1 - População: %lu\n", populacao1) : ("Carta2 - População: %lu\n", populacao2);
+         break;
     case 'B':
     case 'b':
          printf("Você escolheu atributo Área\n");
          printf("Escolha o segundo atributo\n");
-         resultado1 = area1 > area2 ? 1 : 0;
+         resultado1 = area1 > area2 ? 
+         printf("Carta1 - Área: %.2f\n", area1) : ("Carta1 - Área: %.2f\n", area2);
          break;
     case 'C':
     case 'c':
@@ -379,12 +380,14 @@
     case 'A':
     case 'a':
          printf("Você escolheu atributo População\n");
-         resultado2 = populacao1 > populacao2 ? 1 : 0;
+         resultado2 = populacao1 > populacao2 ? 
+         printf("Carta1 - População: %lu\n", populacao1) : ("Carta2 - População: %lu\n", populacao2);
         break;
     case 'B':
     case 'b':
          printf("Você escolheu atributo Área\n");
-         resultado2 = area1 > area2 ? 1 : 0;
+         resultado2 = area1 > area2 ?
+         printf("Carta1 - Área: %.2f\n", area1) : ("Carta1 - Área: %.2f\n", area2);
          break;
     case 'C':
     case 'c':

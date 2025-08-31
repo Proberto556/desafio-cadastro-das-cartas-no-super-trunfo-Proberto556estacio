@@ -333,7 +333,8 @@
     case 'c':
          printf("Você escolheu atributo PIB\n");
          printf("Escolha o segundo atributo\n");
-         resultado1 = pib1 > pib2 ? 1 : 0;
+         resultado1 = pib1 > pib2 ?
+         printf("Carta1 - Pib: %.2f\n", pib1) : ("Carta1 - Pib: %.2f\n", pib2);
          break;
     case 'D':
     case 'd':
